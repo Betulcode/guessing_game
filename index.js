@@ -7,7 +7,7 @@ document.getElementById("check").addEventListener("click",
 function guessNumber() {
   const x=document.getElementById("guess").value;
   if  (x>y){
-    document.getElementById("message").innerHTML = "I am thinking about lover number";
+    document.getElementById("message").innerHTML = "I am thinking about lower number";
     guessCounter+=1;
     document.getElementById("gueesingTimes").innerHTML = guessCounter;
 
@@ -19,7 +19,7 @@ function guessNumber() {
       document.getElementById("gueesingTimes").innerHTML = guessCounter;
     }
     else {
-      document.getElementById("message").innerHTML = "You are the winner";
+      document.getElementById("message").innerHTML = "  **  You are the winner  ** ";
       document.getElementById("gueesingTimes").innerHTML = guessCounter +" times";
       showMe("rabbit");
       beep();
